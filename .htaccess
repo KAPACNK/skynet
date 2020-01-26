@@ -1,0 +1,4 @@
+RewriteEngine On
+RewriteRule ^users/([0-9]+)?/services/([0-9]+)?/tarifs index.php?id=$1&service_id=$2 [L,QSA]
+RewriteRule ^users/([0-9]+)?/services/([0-9]+)?/tarif index.php?id=$1&service_id=$2 [L,QSA]
+ErrorDocument 404 /index.php
